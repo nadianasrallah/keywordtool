@@ -16,6 +16,7 @@ spl_autoload_register(
 
         require $fileName;
         require_once 'DFSClient/Models/KeywordsFinderApi/Related_Keywords/RelatedKeywords.php';
+        require('GuzzleHttp/Client.php');
     }
 );
 ?>
