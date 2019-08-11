@@ -15,7 +15,7 @@ spl_autoload_register(
         $fileName .= str_replace('_', '_', $className) . '.php';
 
         require $fileName;
-        require('DFSClient/Models/KeywordsFinderApi/Related/Keywords/RelatedKeywords.php');
+        require_once 'DFSClient/Models/KeywordsFinderApi/Related_Keywords/RelatedKeywords.php';
     }
 );
 ?>
