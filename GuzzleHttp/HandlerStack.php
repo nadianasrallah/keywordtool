@@ -35,6 +35,31 @@ class HandlerStack
      *
      * @return HandlerStack
      */
+    
+    
+    function choose_handler()
+{
+    $handler = null;
+    if (function_exists('curl_multi_exec') && function_exists('curl_exec')) {
+        $handler = Proxy::wrapSync(new CurlMultiHandler(), new CurlHandler());
+    } elseif (function_exists('curl_exec')) {
+        $handler = new CurlHandler();
+    } elseif (function_exists('curl_multi_exec')) {
+        $handler = new CurlMultiHandler();
+    }
+    if (ini_get('allow_url_fopen')) {
+        $handler = $handler
+            ? Proxy::wrapStreaming($handler, new StreamHandler())
+            : new StreamHandler();
+    } elseif (!$handler) {
+        throw new \RuntimeException('GuzzleHttp requires cURL, the '
+            . 'allow_url_fopen ini setting, or a custom HTTP handler.');
+    }
+    return $handler;
+} 
+    
+    
+    
     public static function create(callable $handler = null)
     {
         $stack = new self($handler ?: choose_handler());
