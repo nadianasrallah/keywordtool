@@ -40,7 +40,7 @@ class HandlerStack
      */
     
     
-    function choose_handler()
+public static function choose_handler()
 {
     $handler = null;
     if (function_exists('curl_multi_exec') && function_exists('curl_exec')) {
