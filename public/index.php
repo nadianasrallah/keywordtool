@@ -5,7 +5,7 @@ require_once '../../../../vendor/autoload.php';
 use DFSClient\DFSClient;
 use DFSClient\Models\KeywordsFinderApi\Related_Keywords\RelatedKeywords;
 
-$DFSClient = new DFSClient('SET your password','SET your password');
+$DFSClient = new DFSClient('nadianasrallah@gmail.com','Ag2bq2aqxaMuFVc3');
 $model     = new RelatedKeywords();
 
 $completed  = $model->setOpt('keyword','big data')
