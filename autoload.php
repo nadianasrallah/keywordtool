@@ -2,7 +2,7 @@
 spl_autoload_register(
     function($className)
     {
-        $className = str_replace("_", "\\", $className);
+        //$className = str_replace("_", "\\", $className);
         $className = ltrim($className, '\\');
         $fileName = '';
         $namespace = '';
@@ -12,7 +12,7 @@ spl_autoload_register(
             $className = substr($className, $lastNsPos + 1);
             $fileName = str_replace('\\', DIRECTORY_SEPARATOR, $namespace) . DIRECTORY_SEPARATOR;
         }
-        $fileName .= str_replace('_', DIRECTORY_SEPARATOR, $className) . '.php';
+        $fileName .= str_replace('_', '_', $className) . '.php';
 
         require $fileName;
     }
