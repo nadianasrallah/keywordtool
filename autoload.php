@@ -19,6 +19,7 @@ spl_autoload_register(
         require_once 'GuzzleHttp/Client.php';
         require_once 'GuzzleHttp/ClientInterface.php';
         require_once 'GuzzleHttp/HandlerStack.php';
+        require_once 'GuzzleHttp/Promise/functions.php';
         
     }
 );
