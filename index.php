@@ -2,7 +2,7 @@
 
 require('RestClient.php');
 
-use DFSClient\DFSClient;
+use DFSClient\DFSClient.php;
 use DFSClient\Models\KeywordsFinderApi\Related_Keywords\RelatedKeywords;
 
 $DFSClient = new DFSClient('nadianasrallah@gmail.com','Ag2bq2aqxaMuFVc3');
