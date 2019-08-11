@@ -2,8 +2,8 @@
 
  return [
 
-     'DATAFORSEO_LOGIN'       => 'Your Login',
-     'DATAFORSEO_PASSWORD'    => 'Your Password',
+     'DATAFORSEO_LOGIN'       => 'nadianasrallah@gmail.com',
+     'DATAFORSEO_PASSWORD'    => 'Ag2bq2aqxaMuFVc3',
 
      'timeoutForEachRequests' => 10,
      'apiVersion'             => '/v2/',
