@@ -16,7 +16,7 @@ spl_autoload_register(
 
         require $fileName;
         require_once 'DFSClient/Models/KeywordsFinderApi/Related_Keywords/RelatedKeywords.php';
-        require_once 'DFSClient/Services/HttpClient/Client.php';
+        require_once 'DFSClient/Services/HttpClient/HttpClient.php';
         
     }
 );
