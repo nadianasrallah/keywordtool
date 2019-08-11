@@ -1,1 +1,1 @@
-web: vendor/bin/heroku-php-apache2 public/Examples/
+web: vendor/bin/heroku-php-apache2 public/Examples/CustomModel.php
