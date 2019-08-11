@@ -18,6 +18,7 @@ spl_autoload_register(
         require_once 'DFSClient/Models/KeywordsFinderApi/Related_Keywords/RelatedKeywords.php';
         require_once 'GuzzleHttp/Client.php';
         require_once 'GuzzleHttp/ClientInterface.php';
+        require_once 'GuzzleHttp/HandlerStack.php';
         
     }
 );
