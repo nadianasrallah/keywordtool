@@ -1,8 +1,10 @@
 <?php
+require('RestClient.php');
+require('autoload.php');
 use DFSClient\DFSClient;
 use DFSClient\Models\KeywordsFinderApi\Related_Keywords\RelatedKeywords;
 
-require('RestClient.php');
+
 
 $DFSClient = new DFSClient('nadianasrallah@gmail.com','Ag2bq2aqxaMuFVc3');
 $model     = new RelatedKeywords();
