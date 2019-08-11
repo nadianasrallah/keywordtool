@@ -2,7 +2,7 @@
 require('RestClient.php');
 require('autoload.php');
 use DFSClient\DFSClient;
-use DFSClient\Models\KeywordsFinderApi\Related_Keywords\RelatedKeywords;
+use DFSClient\Models\KeywordsFinderApi\Related_Keywords\RelatedKeywords.php;
 
 
 
