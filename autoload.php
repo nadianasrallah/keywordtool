@@ -2,7 +2,7 @@
 spl_autoload_register(
     function($className)
     {
-        //$className = str_replace("_", "\\", $className);
+        $className = str_replace("_", "\\", $className);
         $className = ltrim($className, '\\');
         $fileName = '';
         $namespace = '';
