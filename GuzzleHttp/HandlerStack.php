@@ -41,11 +41,7 @@ class HandlerStack
     
 
     
-    
-    
-    public static function create(callable $handler = null)
-    {
-function choose_handler()
+    public function choose_handler()
 {
     $handler = null;
     if (function_exists('curl_multi_exec') && function_exists('curl_exec')) {
@@ -64,7 +60,9 @@ function choose_handler()
             . 'allow_url_fopen ini setting, or a custom HTTP handler.');
     }
     return $handler;
-} }
+}
+    
+    public static function create(callable $handler = null)
     {
         $stack = new self($handler ?: choose_handler());
         $stack->push(Middleware::httpErrors(), 'http_errors');
