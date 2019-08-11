@@ -2,8 +2,8 @@
 namespace GuzzleHttp;
 
 use Psr\Http\Message\RequestInterface;
-include_once dirname(dirname(__DIR__)).'/GuzzleHttp/functions.php';
-include_once dirname(dirname(__DIR__)).'/GuzzleHttp/Psr7/functions.php';
+//include_once dirname(dirname(__DIR__)).'/GuzzleHttp/functions.php';
+//include_once dirname(dirname(__DIR__)).'/GuzzleHttp/Psr7/functions.php';
 //include_once dirname(dirname(__DIR__)).'/GuzzleHttp/Promise/functions.php';
 
 /**
