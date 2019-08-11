@@ -1,6 +1,6 @@
 <?php
 
-require_once '../../../../vendor/autoload.php';
+require('RestClient.php');
 
 use DFSClient\DFSClient;
 use DFSClient\Models\KeywordsFinderApi\Related_Keywords\RelatedKeywords;
